@@ -1,7 +1,5 @@
 language: python
 python:
-    - "3.4"
-    - "3.6"
     - "3.7"
 
 virtualenv:
@@ -26,7 +24,7 @@ before_install:
   # It seems that the solution proposed in the link below fixes this:
   # http://code-saturne.org/forum/viewtopic.php?f=3&t=1687&sid=9912a7abac3b92c1b067fc495521ed7a&start=10
   - sudo apt-get update -qq
-  - sudo apt-get install -qq libatlas-dev libatlas-base-dev liblapack-dev gfortran python-qt4 lcov
+  - sudo apt-get install -qq libatlas-dev libatlas-base-dev liblapack-dev gfortran python-qt5 lcov
   - gem install coveralls-lcov
   - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
   - chmod +x miniconda.sh
